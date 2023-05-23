@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rani - Footwear Prediction</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Image Classification</h1>
+    <p>DJL-Serving Demonstration by raschnic</p>
+    <form>
+        <div class="form-group">
+            <label>Upload your image to classify it with resnet (jpeg, png)</label>
+            <input type="file" accept="..." class="form-control-file" id="image" name="image"
+                   onchange="checkFiles(this.files);">
+        </div>
+    </form>
+    <div id="answerPart">
+        <p><b>Answer:</b>
+        <div id="answer"></div>
+        </p>
+        <p id="previewPart"><b>Analyzed Image:</b>
+        <p><img id="preview" width="300" src="#" alt="preview" /></p>
+        </p>
+    </div>
+</div>
+</body>
+</html>

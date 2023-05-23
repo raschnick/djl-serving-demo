@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  web-service:
+    depends_on:
+      - model-service
+    image: snackbar/djl-serving-consumer
+    ports:
+      - "80:8082"
+    restart: always
+
+  model-service:
+    image: snackbar/djl-serving
+    restart: always
+
